@@ -13,4 +13,5 @@ int main(void) {
 	cout << sum<int>(1, 2) << endl;
 	cout << sum<float>(1.f, 2.f) << endl;
 	cout << sum<string>("1", "2") << endl;
+
 }
