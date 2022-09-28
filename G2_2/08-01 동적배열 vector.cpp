@@ -6,26 +6,31 @@ using namespace std;
 
 int main(void)
 {
-	// 크기가 10개로 고정된 정적배열
-	string s1[10];
-	string* s2 = new string[10];
 
 	// 크기 확장이 가능한 동적배열
 	vector<string> s3;
 	s3.reserve(10); // 크기를 10개로 확장
 
 	for (int i = 0; i < 10; i++) {
-		s1[i] = "ab";
-		s2[i] = "ab";
 		s3.push_back("ab");
 	}
 
-	// idx 범위초과(공간부족)
-	// s1[10] = "ab";
-	// s2[10] = "ab";
-
 	// 기존공간에 크기를 확장하여 삽입
 	s3.push_back("ab");
+
+	// 백터의 원소들을 출력
+	for (int i = 0; i < s3.size(); i++) {
+		cout << s3[i] << endl;
+	}
+
+	// 백터 데이터 수정
+	s3[1] = "cd";
+	s3.at(2) = "ef";
+
+	// 백터의 원소들을 출력
+	for (int i = 0; i < s3.size(); i++) {
+		cout << s3[i] << endl;
+	}
 
 	return 0;
 
