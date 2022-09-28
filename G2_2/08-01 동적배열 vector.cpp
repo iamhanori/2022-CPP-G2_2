@@ -19,8 +19,8 @@ int main(void)
 	s3.push_back("ab");
 
 	// 백터의 원소들을 출력
-	for (int i = 0; i < s3.size(); i++) {
-		cout << s3[i] << endl;
+	for (iter = s3.begin(); iter != s3.end(); iter++) {
+		cout << *iter << " ";
 	}
 
 	// 백터 데이터 수정
@@ -28,8 +28,9 @@ int main(void)
 	s3.at(2) = "ef";
 
 	// 백터의 원소들을 출력
-	for (int i = 0; i < s3.size(); i++) {
-		cout << s3[i] << endl;
+	// 백터의 원소들을 출력
+	for (iter = s3.begin(); iter != s3.end(); iter++) {
+		cout << *iter << " ";
 	}
 
 	return 0;
