@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="08-01 동적배열 vector.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
