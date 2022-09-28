@@ -4,10 +4,17 @@
 
 using namespace std;
 
+template <typename S, typename I>
 class Character{
+private:
+	S name;
+	I hp;
+	I of;
+	I de;
+
 public:
 	// »ý¼ºÀÚ
-	Character(string _name, int _hp, int _of, int _de)
+	Character(S _name, I _hp, I _of, I _de)
 		:name(_name), hp(_hp), of(_of), de(_de) {}
 
 
@@ -18,15 +25,14 @@ public:
 		cout << "of " << of << endl;
 		cout << "de " << de << endl;
 	}
-private:
-	string name;
-	int hp;
-	int of;
-	int de;
+
 };
 
 int main(void)
 {
-	Character *player = new Character("player", 1, 1, 1);
-	player->Print();
+	Character<string, int> * p1 = new Character<string, int>("p1", 1, 1, 1);
+	p1->Print();
+
+	delete p1;
+	return 0;
 }
