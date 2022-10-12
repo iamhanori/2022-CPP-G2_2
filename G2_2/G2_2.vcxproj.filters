@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="08-01 동적배열 vector.cpp">
+    <ClCompile Include="08-02 map.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

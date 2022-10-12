@@ -19,8 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="08-01 동적배열 vector.cpp" />
-    <ClCompile Include="test.cpp" />
+    <ClCompile Include="08-02 map.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
